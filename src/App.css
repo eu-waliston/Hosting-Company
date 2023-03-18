@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --montserrat-font: 'Montserrat', sans-serif;
+  --poppins-font: 'Poppins', sans-serif;
+  --yellow-orange-color: #f5961d;
+  --old-lace-color: #fdf5ae;
+  --red-color: #ff6347;
+  --gray-color: #f2f2f2;
+  --dark-color: #333;
+  --light-color: #fff;
+  --transition: all 0.3s ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+}
+
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--dark-color);
+  font-family: var(--poppins-font);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--montserrat-font);
+  margin-top: 0;
+  line-height: 1.3;
+}
+
+a {
+  color: var(--dark-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+
+/*------------------------ MEDIA QUERIES-------------------------- */
+
+@media(min-width: 450px) {
+  .navbar-collapse {
+    width: 320px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media(min-width: 768px) {
+  .banner {
+    padding: 0;
   }
-  to {
-    transform: rotate(360deg);
+  .banner .container {
+    display: flex;
+    grid-template-columns:  repeat(2, 1fr);
+    place-items: center;
+  }
+  .banner-text {
+    text-align: left;
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .banner-image {
+    margin-left: 3rem;
+  }
+  .input-group {
+    justify-content: start;
+  }
+  .services-grid, .features-grid, .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+@media(min-width: 992px) {
+  .navbar-toggler {
+    display: none;
+  }
+  .navbar-collapse {
+    position: relative;
+    width: 100%;
+    transform:  translateX(0);
+    background-color: transparent;
+    border-left: none;
+    transition: none;
+  }
+  .navbar-nav {
+    display: flex;
+    padding: 0;
+    justify-content: flex-end;
+  }
+
+  .nav-item {
+    margin:  0 0 0 2.4rem;
+  }
+
+  .nav-link {
+    color: var(--dark-color);
+    opacity: 0.8;
+  }
+
+  .nav-link::before {
+    content: "";
+  }
+
+  .nav-link:hover {
+    transform: none;
+    color: var(--yellow-orange-color);
+  }
+
+  .banner-text h1 {
+    font-size:  4.4rem;
+  }
+  .banner-text .text {
+    font-size: 2rem;
+  }
+  .features-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+  .pricing-item {
+    width: 100%;
+  }
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+  }
+
+
+}
+
+@media(min-width: 1200px) {
+  .banner .container {
+    min-height:  calc(100vh - 70px);
+    padding-bottom: 5rem;
+  }
+  .banner-text h1 {
+    font-size: 6rem;
+  }
+  #services > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    place-items: center;
+  }
+  #services-left {
+    display: block;
+  }
+  .testimonials-grid {
+    grid-template-columns: repeat(4,1fr);
+  }
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
