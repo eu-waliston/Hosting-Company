@@ -7,13 +7,9 @@ const Nav = () => {
       <nav class="navbar flex">
         <div class="container flex">
           <a href="index.html" class="navbar-brand flex">
-            <img src="../images/site-logo.png" alt="site logo" />
+            <img src={require("../images/site-logo.png")} alt="site logo" />
             <span>WebGeek</span>
           </a>
-          <button type="button" class="navbar-toggler flex">
-            <img src={require("../images/ham-menu-icon.png")} alt="icon"/>
-          </button>
-
           <div class="navbar-collapse">
             <ul class="navbar-nav">
               <li class="nav-item">

@@ -52,12 +52,6 @@ ul {
 
 /*------------------------ MEDIA QUERIES-------------------------- */
 
-@media(min-width: 450px) {
-  .navbar-collapse {
-    width: 320px;
-  }
-}
-
 @media(min-width: 768px) {
   .banner {
     padding: 0;
@@ -86,41 +80,6 @@ ul {
 }
 
 @media(min-width: 992px) {
-  .navbar-toggler {
-    display: none;
-  }
-  .navbar-collapse {
-    position: relative;
-    width: 100%;
-    transform:  translateX(0);
-    background-color: transparent;
-    border-left: none;
-    transition: none;
-  }
-  .navbar-nav {
-    display: flex;
-    padding: 0;
-    justify-content: flex-end;
-  }
-
-  .nav-item {
-    margin:  0 0 0 2.4rem;
-  }
-
-  .nav-link {
-    color: var(--dark-color);
-    opacity: 0.8;
-  }
-
-  .nav-link::before {
-    content: "";
-  }
-
-  .nav-link:hover {
-    transform: none;
-    color: var(--yellow-orange-color);
-  }
-
   .banner-text h1 {
     font-size:  4.4rem;
   }
