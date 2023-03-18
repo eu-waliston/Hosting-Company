@@ -13,7 +13,7 @@ const Nav = () => {
           <div class="navbar-collapse">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a href="#header" class="nav-link">
+                <a href="#sept" class="nav-link">
                   Home
                 </a>
               </li>

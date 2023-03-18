@@ -1,0 +1,77 @@
+
+.section-heading {
+    text-align: center;
+    padding-bottom: 3rem
+}
+
+.section-heading h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.section-heading .heading-lg {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--red-color);
+    display: block;
+    margin-top: 1rem;
+    text-transform: capitalize;
+}
+
+.section-heading .text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.py-5 {
+    padding: 5rem 0;
+}
+
+#services {
+    background-color: var(--gray-color);
+}
+
+.service-item {
+    background-color: var(--light-color);
+    margin: 2rem 0;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.service-item .icon {
+    font-size: 3.8rem;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background-color: var(--old-lace-color);
+    color: var(--yellow-orange-color);
+    margin: 0 auto;
+}
+
+.service-item .badge {
+    background-color: var(--yellow-orange-color);
+    display: inline-block;
+    margin-top: 2rem;
+    padding: .7rem 2.8rem;
+    border-radius: 1.9rem;
+    text-transform: uppercase;
+}
+
+.service-item .text {
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 400;
+    opacity: 0.5;
+    margin-top: 1.8rem;
+}
+
+.service-item h2 {
+    color: var(--yellow-orange-color);
+    margin-top: 1.2rem;
+}
+
+.service-left {
+    display: none;
+}

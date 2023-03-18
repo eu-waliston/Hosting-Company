@@ -1,0 +1,30 @@
+.testimonials-item {
+    background-color: var(--gray-color);
+    margin: 2rem 0;
+    padding: 2rem 3rem;
+    text-align: center;
+  }
+
+  .testimonials-item .image{
+    overflow: hidden;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border:  5px solid var(--light-color);
+    margin: 1rem auto;
+  }
+
+  .testimonials-item .text {
+    line-height: 1.7;
+  }
+
+  .testimonials-item h2 {
+    font-size: 2rem;
+    color: var(--yellow-orange-color);
+    margin: 2rem 0 1rem 0;
+  }
+
+  .testimonials-item span {
+    opacity: 0.6;
+    font-weight: 600;
+  }
